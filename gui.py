@@ -4,7 +4,6 @@ import sounddevice as sd
 import numpy as np
 import torchaudio
 import pyttsx3
-import threading
 import tkinter as tk
 from tkinter import scrolledtext
 from scipy.io.wavfile import write
@@ -12,7 +11,6 @@ from transformers import AutoModelForSpeechSeq2Seq, AutoProcessor, pipeline
 import google.generativeai as genai
 from dotenv import load_dotenv
 
-# Load environment variables
 load_dotenv()
 HF_TOKEN = os.getenv("HF_TOKEN")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
@@ -20,11 +18,9 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not HF_TOKEN or not GEMINI_API_KEY:
     raise ValueError("Missing API tokens. Please set HF_TOKEN and GEMINI_API_KEY in your .env file.")
 
-# Device configuration
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32
 
-# Load Whisper model
 model_id = "openai/whisper-medium.en"
 model = AutoModelForSpeechSeq2Seq.from_pretrained(
     model_id, torch_dtype=torch_dtype, use_safetensors=True, token=HF_TOKEN
@@ -39,11 +35,9 @@ asr_pipeline = pipeline(
     device=device,
 )
 
-# Configure Google Gemini API
 genai.configure(api_key=GEMINI_API_KEY)
 engine = pyttsx3.init()
 
-# Load personal information
 def load_personal_info(filename="about_me.txt"):
     try:
         with open(filename, "r", encoding="utf-8") as file:
@@ -53,12 +47,10 @@ def load_personal_info(filename="about_me.txt"):
 
 personal_info = load_personal_info()
 
-# Function to convert text to speech
 def speak_response(text):
     engine.say(text)
     engine.runAndWait()
 
-# Function to record user audio
 def record_audio(duration=5, samplerate=16000, filename="input.wav"):
     try:
         audio = sd.rec(int(samplerate * duration), samplerate=samplerate, channels=1, dtype=np.int16)
@@ -68,7 +60,6 @@ def record_audio(duration=5, samplerate=16000, filename="input.wav"):
     except:
         return None
 
-# Function to transcribe recorded audio
 def transcribe_audio(filename):
     try:
         waveform, sample_rate = torchaudio.load(filename)
@@ -82,9 +73,7 @@ def transcribe_audio(filename):
     except:
         return ""
 
-# Function to get AI response
 def get_chat_response(text):
-    """Generate a response using Google Gemini Flash, incorporating personal information."""
     try:
         model = genai.GenerativeModel("gemini-1.5-flash")
         prompt = f"You are a chat bot that resembles me so answer like a human based on the following personal information, answer the query accurately and very precisely:\n\n{personal_info}\n\nUser: {text}\nBot:"
@@ -94,7 +83,6 @@ def get_chat_response(text):
         print(f"Error in chatbot response: {e}")
         return "I'm sorry, I couldn't understand that."
 
-# GUI Implementation
 class VoiceChatbotGUI:
     def __init__(self, root):
         self.root = root
@@ -137,7 +125,7 @@ class VoiceChatbotGUI:
             self.root.after(1000, self.chat_loop)
             return
         
-        self.text_display.insert(tk.END, f"🗣 User: {user_text}\n")
+        self.text_display.insert(tk.END, f"🔦 User: {user_text}\n")
         if user_text.lower() in ["exit", "quit", "stop"]:
             self.stop_chat()
             return
@@ -148,7 +136,6 @@ class VoiceChatbotGUI:
         
         self.root.after(1000, self.chat_loop)
 
-# Start GUI
 if __name__ == "__main__":
     root = tk.Tk()
     app = VoiceChatbotGUI(root)
