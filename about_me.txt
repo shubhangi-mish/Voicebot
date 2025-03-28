@@ -1,0 +1,75 @@
+SHUBHANGI MISHRA                                                    
+shubhangi3mar@gmail.com Github Profile @Shubhangi 
++91- 9310735828 LinkedIn Profile @Shubhangi 
+Guru Gobind Singh Indraprastha University, Delhi 
+Bachelor of Technology in CSE-Industrial Internet of Things 
+Indian Institute of Technology-Madras (IIT-Madras) 
+Bachelor of Science in Data Science and Applications (Online Degree) 
+2021-25 
+CGPA: 8.7 
+2022-25 
+CGPA: 7 
+Artificial Intelligence intern, Code Stand LLC                                                                                                                         
+Remote Intern - Florida, USA 
+Jul-Dec 2024 
+• Worked in a U.S. based startup remotely and developed AI solutions for recruiters and applicants using AI that streamlines 
+the recruiting process and also helps in interview preparation of the candidate. 
+Blockchain Development intern, GSSIPU 
+Intern, New Delhi 
+Sept-Oct 2023 
+• Worked under my college professor as a blockchain intern and developed Decentralized application along with understanding 
+deep concepts of Blockchain, huge focus on was on developing multi-user blockchain dapp. 
+International Project Contributor, Omdena  
+Remote project contributor (UAE Chapter) 
+Aug-sept 2023 
+• Contributed to the Abu Dhabi Open Data Intelligence project, collaborating with the Omdena community to develop a voice/text 
+engine for advanced data analytics using Falcon LLM, prioritizing ethical AI practices. 
+Research paper accepted in IC4S’05 Volume’02 
+Mar 2024 
+• The paper titled as “Securing Digital Integrity: A comprehensive Framework for Deepfake Detection and Blockchain Validation 
+in Static Visual Content” is submitted to Lecture notes in networks and Systems (LNNS, Springer) for publication. 
+Appian AI application Challenge @ IIT-Madras, Runner up (30k INR) 
+Jan 2024 
+• Created a Business Automation AI powered Application for a problem statement focusing on education of University of South 
+Florida, and won a prize of 30K INR. 
+Google Cloud Study Jam Facilitator’23, Tier – 1 
+Oct-Nov 2023 
+• As a Google Cloud Study Jam facilitator, I empowered learners to master Google Cloud technologies through hands-on labs and 
+guidance, and enabled my GDSC to land in Tier-1. 
+AWS AI/ML Scholarship 
+Jun-Nov 2023 
+• Awarded with an AWS sponsored Nano-Degree from Udacity, worth 4000 USD for AI Programming with Python. Among the top 
+1000 applicants worldwide. 
+Image Classifier and command line application (AIML Project) Python, Tensorflow, Keras, Numpy, Pandas. Source Code 
+• Developed an Image classifier command line application with using VGG, Alexnet and Resnet as the model architecture. 
+LLM based text application (AIML - NLP Project)     Python, transformers, huggingface, numpy, pytorch Source Code 
+• This app summarizes, translates, expands and Fact checks the text provided to it, it can also answer your questions like 
+ChatGPT. It works on API calls to the LLMs for fetching the output.  
+Cryptocurrency Exchange (Blockchain Project)    JavaScript, Cranq, Solidity, Goerli ETH, React js, Metamask Source Code 
+• Cryptocurrency exchange Dapp which is multi-user and multiple people with the same smart contract address can interact with 
+it and know about other people’s transactions. 
+• Smart contract is built and deployed using new technology called Cranq, which enables to understand each connection deeply. 
+Map Navigator (DSA Project) 
+A* star algo, Dijkstra algo, Best first Search 
+• Developed an efficient map navigation algorithm, reducing average route-planning time by 40%. Successfully achieved a 95% 
+accuracy rate in delivering optimal directions and shortest travel routes for user. 
+Oximeter and Pulse Calculator (IOT Project) Arduino, Sensor integration 
+• Capable of sensing blood oxygen and pulse rate with the use of MAX30100, Arduino uno and HC-05 bluetooth module and 
+display it on OLED display. 
+• Fidutam, INDIA-Chapter, Country Head 
+• Google DSC(GDSC-USAR), Cloud Lead 
+• GGSIPU ACM-W, Head of Public Relations 
+• GGSIPU ACM-W, Research Lead & Web Developer 
+Aug 2023-present 
+Aug 2023-24 
+May 2023-24 
+May 2023-24 
+Programming Languages: C /C++, Python, Java, MySQL, HTML, CSS, ReactJs, JavaScript, Django, Typescript.  
+MongoDb, Relational Database, Google Cloud Platform, Azure Data Factory, Azure Synapse Analytics, NoSQL. 
+Development: Web Design and Development, Blockchain Development. 
+Data Analytics: R, Python, SQL, MATLAB, Numpy, Scikit learn, Pandas, Power BI. 
+Technical Skills: Machine learning, IoT, Web development, Web 3.0, TCP/IP, Network programming, Linux/Unix, Windows 
+environment, Github, Artificial Intelligence, Cloud platforms, RESTful API, distributed systems, information retrieval, Docker. 
+Relevant Coursework: Design and Analysis of Algorithms, Operating Systems, Object Oriented Programming, Database 
+Management System, Software Engineering, System Design, Data Structure and Algorithm, Data Visualization. 
+• Soft Skills: Public Speaker (Debate winner (1st position)), Problem Solving, Self-learning, Leadership, Adaptability.

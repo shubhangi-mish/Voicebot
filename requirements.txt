@@ -1,0 +1,8 @@
+sounddevice
+numpy
+torch
+torchaudio
+scipy
+TTS
+ffmpeg
+google-generativeai
